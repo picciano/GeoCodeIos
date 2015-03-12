@@ -14,6 +14,10 @@
 		AF1D59191AB22F3B008C3F57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1D59181AB22F3B008C3F57 /* Images.xcassets */; };
 		AF1D591C1AB22F3B008C3F57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF1D591A1AB22F3B008C3F57 /* LaunchScreen.xib */; };
 		AF1D59281AB22F3B008C3F57 /* GeoCodeIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1D59271AB22F3B008C3F57 /* GeoCodeIosTests.m */; };
+		AF1D59321AB22F5A008C3F57 /* geocoding_test_with_coordinate.csv in Resources */ = {isa = PBXBuildFile; fileRef = AF1D59311AB22F5A008C3F57 /* geocoding_test_with_coordinate.csv */; };
+		AF1D59351AB22F64008C3F57 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1D59341AB22F64008C3F57 /* CHCSVParser.m */; };
+		AF1D59371AB22F6B008C3F57 /* FactualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D59361AB22F6B008C3F57 /* FactualSDK.framework */; };
+		AF1D593A1AB23105008C3F57 /* NSString+Escaping.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1D59391AB23105008C3F57 /* NSString+Escaping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		AF1D59211AB22F3B008C3F57 /* GeoCodeIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCodeIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1D59261AB22F3B008C3F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1D59271AB22F3B008C3F57 /* GeoCodeIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoCodeIosTests.m; sourceTree = "<group>"; };
+		AF1D59311AB22F5A008C3F57 /* geocoding_test_with_coordinate.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geocoding_test_with_coordinate.csv; sourceTree = "<group>"; };
+		AF1D59331AB22F64008C3F57 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		AF1D59341AB22F64008C3F57 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		AF1D59361AB22F6B008C3F57 /* FactualSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FactualSDK.framework; sourceTree = "<group>"; };
+		AF1D59381AB23105008C3F57 /* NSString+Escaping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Escaping.h"; sourceTree = "<group>"; };
+		AF1D59391AB23105008C3F57 /* NSString+Escaping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Escaping.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D59371AB22F6B008C3F57 /* FactualSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +94,17 @@
 			children = (
 				AF1D590F1AB22F3B008C3F57 /* AppDelegate.h */,
 				AF1D59101AB22F3B008C3F57 /* AppDelegate.m */,
+				AF1D59381AB23105008C3F57 /* NSString+Escaping.h */,
+				AF1D59391AB23105008C3F57 /* NSString+Escaping.m */,
+				AF1D59331AB22F64008C3F57 /* CHCSVParser.h */,
+				AF1D59341AB22F64008C3F57 /* CHCSVParser.m */,
+				AF1D59311AB22F5A008C3F57 /* geocoding_test_with_coordinate.csv */,
 				AF1D59121AB22F3B008C3F57 /* ViewController.h */,
 				AF1D59131AB22F3B008C3F57 /* ViewController.m */,
 				AF1D59151AB22F3B008C3F57 /* Main.storyboard */,
 				AF1D59181AB22F3B008C3F57 /* Images.xcassets */,
 				AF1D591A1AB22F3B008C3F57 /* LaunchScreen.xib */,
+				AF1D59361AB22F6B008C3F57 /* FactualSDK.framework */,
 				AF1D590B1AB22F3B008C3F57 /* Supporting Files */,
 			);
 			path = GeoCodeIos;
@@ -199,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D59321AB22F5A008C3F57 /* geocoding_test_with_coordinate.csv in Resources */,
 				AF1D59171AB22F3B008C3F57 /* Main.storyboard in Resources */,
 				AF1D591C1AB22F3B008C3F57 /* LaunchScreen.xib in Resources */,
 				AF1D59191AB22F3B008C3F57 /* Images.xcassets in Resources */,
@@ -219,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D59351AB22F64008C3F57 /* CHCSVParser.m in Sources */,
 				AF1D59141AB22F3B008C3F57 /* ViewController.m in Sources */,
 				AF1D59111AB22F3B008C3F57 /* AppDelegate.m in Sources */,
+				AF1D593A1AB23105008C3F57 /* NSString+Escaping.m in Sources */,
 				AF1D590E1AB22F3B008C3F57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +363,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GeoCodeIos",
+				);
 				INFOPLIST_FILE = GeoCodeIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +377,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GeoCodeIos",
+				);
 				INFOPLIST_FILE = GeoCodeIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

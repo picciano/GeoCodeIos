@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FactualSDK/FactualAPI.h>
+#import "CHCSVParser.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CHCSVParserDelegate, FactualAPIDelegate>
 
 
 @end
